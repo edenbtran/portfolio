@@ -19,18 +19,12 @@
 
     <meta name="theme-color" content="#36d1dc" />
 
-    <meta property="og:url" content="https://devfolio.js.org/" />
+    <meta property="og:url" content="https://edenbtran.github.io/portfolio/" />
 
     <meta property="og:title" content="Eden Tran | Developer" />
 
     <meta property="og:description" content="Eden Tran is a software developer and data scientist specializing in JavaScript, React, and Python. Explore my projects and get in touch." />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta
-      property="og:image"
-      content="https://devfolio.js.org/assets/devfolio.png"
-    />
-
+    
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -91,7 +85,7 @@
               My expertise lies in building scalable applications and data-driven models that solve real-world problems. Let's connect and turn your ideas into reality.
             </p>
             <span class="about-wrapper__cta">
-              <a href="https://docs.google.com/document/d/1GM4tZTRRJJQhylTpXdx7Z4Y2lt0_zi4q/edit?usp=sharing&ouid=102644961509911518239&rtpof=true&sd=true" class="cta-btn cta-btn--resume">View Resume</a>
+              <a href="https://drive.google.com/file/d/1UZp9N6MbzpjWhna1AMovo5o6-d0hmPsN/view?usp=sharing" class="cta-btn cta-btn--resume">View Resume</a>
             </span>
           </div>
         </div>
@@ -104,7 +98,38 @@
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Housing Price Prediction</h3>
+              <p class="project-wrapper__text-info">
+                In this project, I analyzed the Ames Housing dataset to predict house prices. 
+                I performed data preprocessing by converting string data types to categorical, imputing missing values with the median, and encoding categorical variables as numerical codes. 
+                I selected the Random Forest Regressor for its ability to handle high-dimensional data and capture non-linear relationships. Hyperparameter tuning was done using GridSearchCV to optimize model performance. 
+                The final model was evaluated using RMSE, and feature importance analysis identified the most influential predictors. This project demonstrates my skills in data preprocessing, model building, and extracting insights from complex datasets.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/edenbtran/House-Price-Predicting/blob/main/project.ipynb" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
 
+            <div class="project-wrapper__image">
+              <a href="https://github.com/edenbtran/House-Price-Predicting/blob/main/project.ipynb" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project3.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -178,38 +203,6 @@
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/project2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-           <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Housing Price Prediction</h3>
-              <p class="project-wrapper__text-info">
-                In this project, I analyzed the Ames Housing dataset to predict house prices. 
-                I performed data preprocessing by converting string data types to categorical, imputing missing values with the median, and encoding categorical variables as numerical codes. 
-                I selected the Random Forest Regressor for its ability to handle high-dimensional data and capture non-linear relationships. Hyperparameter tuning was done using GridSearchCV to optimize model performance. 
-                The final model was evaluated using RMSE, and feature importance analysis identified the most influential predictors. This project demonstrates my skills in data preprocessing, model building, and extracting insights from complex datasets.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a href="https://github.com/edenbtran/House-Price-Predicting/blob/main/project.ipynb" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/edenbtran/House-Price-Predicting/blob/main/project.ipynb" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project3.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
